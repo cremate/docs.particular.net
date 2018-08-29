@@ -1,5 +1,5 @@
 ---
-title: Asp.NET Core Dependency Injection Integration
+title: ASP.NET Core Dependency Injection Integration
 component: core
 reviewed: 2017-10-02
 tags:
@@ -8,7 +8,7 @@ related:
  - nservicebus/dependency-injection
 ---
 
-[Asp.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) comes with an integrated [Dependency Injection (DI) feature](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection). When hosting NServiceBus endpoints inside an Asp.NET Core app, components registered for DI might need to be shared between Asp.NET components and NServiceBus message handlers.
+[ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) comes with an integrated [Dependency Injection (DI) feature](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection). When hosting NServiceBus endpoints inside an Asp.NET Core app, components registered for DI might need to be shared between Asp.NET components and NServiceBus message handlers.
 
 ### Configuring an endpoint to use built-in DI
 
@@ -26,7 +26,7 @@ snippet: InjectingDependency
 
 ### Configuring to use shared DI using Autofac
 
-It is also possible to use an external container to share components between Asp.NET and NServiceBus message handlers.
+It is also possible to use an external container to share components between ASP.NET and NServiceBus message handlers.
 
 Note: While this sample illustrates the scenario using [Autofac](/nservicebus/dependency-injection/autofac.md), the same can be achieved by using most other [DI libraries](/nservicebus/dependency-injection/). Using Autofac requires adding reference to the `Autofac.Extensions.DependencyInjection` package.
 
