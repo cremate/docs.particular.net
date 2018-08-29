@@ -53,8 +53,6 @@ public class Startup
             applicationBuilder.UseDeveloperExceptionPage();
         }
 
-        #region RequestHandlingAutofac
-
         applicationBuilder.Run(
             handler: context =>
             {
@@ -71,8 +69,6 @@ public class Startup
                     endpointInstance.SendLocal(myMessage),
                     context.Response.WriteAsync("Message sent"));
             });
-
-        #endregion
     }
 
     void OnShutdown()

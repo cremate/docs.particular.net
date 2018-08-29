@@ -13,7 +13,8 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddSingleton<IEndpointInstance>(sp => endpoint);
+        services.AddSingleton(sp => endpoint);
+        services.AddSingleton<MyService>();
 
         var endpointConfiguration = new EndpointConfiguration("Sample.Core");
         endpointConfiguration.UseTransport<LearningTransport>();

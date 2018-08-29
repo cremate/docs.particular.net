@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using NServiceBus;
-#region InjectingDependencyAutofac
+
 public class MyHandler :
     IHandleMessages<MyMessage>
 {
@@ -17,4 +17,3 @@ public class MyHandler :
         return Task.CompletedTask;
     }
 }
-#endregion
