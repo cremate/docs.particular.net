@@ -1,6 +1,6 @@
 ---
 title: Microsoft.Extensions.DependencyInjection
-summary: Details on how to Configure NServiceBus to use Microsoft.Extensions.DependencyInjection for dependency injection. Includes usage examples as well as lifecycle mappings. 
+summary: Shows how to Configure NServiceBus to use Microsoft.Extensions.DependencyInjection for dependency injection.
 component: MSDependencyInjection
 reviewed: 2017-08-29
 tags:
